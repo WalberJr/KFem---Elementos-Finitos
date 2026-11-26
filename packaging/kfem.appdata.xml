@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.kfem.KFem</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>KFem</name>
+  <summary>Simulador multifísico livre baseado no FEniCSx</summary>
+  <description>
+    <p>Modelagem por elementos finitos com árvore do modelo, configurações e janela gráfica.
+    Escoamento em meio poroso, corrente secundária e transporte de espécies, com detecção
+    automática de GPU.</p>
+  </description>
+  <launchable type="desktop-id">kfem.desktop</launchable>
+  <content_rating type="oars-1.1"/>
+</component>

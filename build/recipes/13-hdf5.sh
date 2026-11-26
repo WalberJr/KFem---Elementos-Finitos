@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+. "$(dirname "$0")/_common.sh"; begin hdf5 "hdf5-${HDF5_VERSION}.tar.gz"
+export PATH="$KFEM_SDK/tools/bin:$PATH" CC="$KFEM_SDK/bin/mpicc"
+cmake -B b -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$KFEM_SDK" \
+  -DHDF5_ENABLE_PARALLEL=ON -DHDF5_BUILD_CPP_LIB=OFF -DHDF5_BUILD_FORTRAN=OFF -DHDF5_BUILD_JAVA=OFF \
+  -DBUILD_TESTING=OFF -DHDF5_BUILD_EXAMPLES=OFF -DHDF5_BUILD_TOOLS=ON -DHDF5_ENABLE_ZLIB_SUPPORT=ON -DBUILD_STATIC_LIBS=OFF
+cmake --build b; cmake --install b; finish

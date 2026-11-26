@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=KFem
+GenericName=Simulador multifísico
+Comment=Simulação por elementos finitos (FEniCSx) com interface própria
+Exec=kfem %f
+Icon=kfem
+Categories=Science;Physics;Engineering;
+MimeType=application/x-kfem;
+Terminal=false

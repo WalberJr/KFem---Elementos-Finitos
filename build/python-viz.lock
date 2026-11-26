@@ -1,0 +1,75 @@
+ast_serialize==0.13.1
+attrs==26.1.0
+build==1.2.2.post1
+certifi==2026.10.23
+cffi @ file:///media/walber/CODES/kfem/downloads/cffi-2.1.1.tar.gz#sha256=dd31f52ea1086513bb9df30f8fcee9b8918323ae067a3d5b78bc826a000712be
+charset-normalizer==3.5.2
+contourpy==1.4.0
+cycler==0.12.1
+cyclopts==5.5.2
+Cython==3.3.1
+distro==1.9.0
+docstring_parser==0.18.0
+fenics-basix @ file:///home/walber/kfem-build/basix/basix-0.11.0/python
+fenics-ffcx @ file:///media/walber/CODES/kfem/downloads/ffcx-0.11.0.tar.gz#sha256=7df1c086c0398b72343a5f047c7e6aa17ea05f1ba123e3e0ca858d6a133b13bd
+fenics-ufl @ file:///media/walber/CODES/kfem/downloads/ufl-2026.1.0.tar.gz#sha256=72c0e4ac3d2f648f30f860fd4e895d96415a77318cb4551c5dbc53dc644b7c96
+flexcache==0.3
+flexparser==0.4
+flit_core==4.2.0
+fonttools==4.68.0
+h5py @ file:///home/walber/kfem-build/h5py/h5py-3.16.0
+hatchling==1.33.0
+idna==3.20
+iniconfig==2.3.1
+kiwisolver==1.5.1
+librt==0.16.0
+markdown-it-py==4.3.0
+matplotlib @ file:///media/walber/CODES/kfem/downloads/matplotlib-3.11.2.tar.gz#sha256=cec596316640f2b394b8f0daa0ea61a8eae82d017b620b9f202befb972a59ea4
+mdurl==0.1.2
+meshio @ file:///media/walber/CODES/kfem/downloads/meshio-5.3.5.tar.gz#sha256=f21f01abd9f29ba06ea119304b3d39e610421cfe93b9dd23362834919f87586d
+meson==1.12.1
+meson-python==0.22.1
+mpi4py @ file:///home/walber/kfem-build/mpi4py/mpi4py-4.1.2
+mypy==2.4.1
+mypy_extensions==1.2.0
+nanobind @ file:///media/walber/CODES/kfem/downloads/nanobind-3.1.0.tar.gz#sha256=6661e3dc1434d78781ccf7913442d90361dab395c3424efadb63bbb6ddea7ea3
+numpy==2.4.6
+packaging==24.2
+patchelf==0.17.2.0
+pathspec==1.1.1
+petsc4py==3.26.1
+pillow==13.0.0
+Pint @ file:///media/walber/CODES/kfem/downloads/pint-0.26.2.tar.gz#sha256=391e5d2fc01fdb121c113b8eb47386688575542c1f5144c465ff318bf5133573
+pkgconfig==1.6.0
+platformdirs==4.14.7
+pluggy==1.7.0
+poetry-core==2.5.0
+pooch==1.9.0
+pybind11 @ file:///media/walber/CODES/kfem/downloads/pybind11-3.1.0.tar.gz#sha256=a1cc06b524ab3edca51f8ad3895f9c4fa20b8b19283173dff4ae781449dc9639
+Pygments==2.21.0
+pyparsing==3.3.3
+pyproject-metadata==0.12.1
+pyproject_hooks==1.3.3
+PySide6==6.12.0
+pytest==9.2.0
+python-dateutil==4.0.0
+pyvista @ file:///media/walber/CODES/kfem/downloads/pyvista-0.49.1.tar.gz#sha256=e3a37f2330ce9d2d680a153ac08fea2bd900aa59d13db46da8f64c92896ddd8e
+pyvista-validation==0.2.2
+pyvistaqt @ file:///media/walber/CODES/kfem/downloads/pyvistaqt-0.13.2.tar.gz#sha256=82aef38012e3110fbe9a3aa92feb8175142cbcee0ae167cd99068c697dce81e1
+QtPy==2.4.3
+requests==2.34.2
+rich==15.0.0
+rich-rst==2.2.0
+scikit_build_core==1.1.2
+scooby==0.12.1
+setuptools==78.1.0
+setuptools-scm==10.3.4
+shiboken6==6.12.0
+shiboken6-generator==6.12.0
+tomlkit==0.15.2
+trove-classifiers==2026.9.21.13
+typing_extensions==4.16.0
+tzdata==2026.6
+urllib3==2.8.0
+vcs-versioning==2.6.0
+wheel==0.46.3

@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kfem"
+version = "0.1.0.dev0"
+description = "Simulador multifísico livre baseado no FEniCSx, com interface própria"
+license = "GPL-3.0-or-later"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+kfem = "kfem.app.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+kfem = ["gui/resources/*", "gui/icons/*.svg", "gui/i18n/*", "gui/assets/*.png"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
+ignore = ["RUF001", "RUF002", "RUF003"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+mypy_path = "src"
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = ["fem: precisa do DOLFINx", "gui: precisa do PySide6/VTK", "slow: lento"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["E501", "E731", "E741"]
+# closures usadas dentro da mesma iteração do passo de estudo (falso positivo)
+"src/kfem/solvers/study.py" = ["B023"]
+
+# Solver/GUI dependem de stubs incompletos (DOLFINx, petsc4py, PySide6): checagem relaxada só nesses
+# códigos de erro; o núcleo (hw, model, io) continua em modo estrito.
+[[tool.mypy.overrides]]
+module = ["kfem.solvers.*", "kfem.physics.*", "kfem.geometry.*", "kfem.gui.*"]
+disable_error_code = ["assignment", "arg-type", "misc", "union-attr", "attr-defined", "no-any-return",
+                      "call-overload", "index", "operator", "func-returns-value", "return-value",
+                      "no-untyped-call"]

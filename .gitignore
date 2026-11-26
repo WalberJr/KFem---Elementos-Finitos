@@ -1,0 +1,34 @@
+# Arquivos do usuário (modelos proprietários / confidenciais)
+samples/*.mph
+samples/private/
+
+# Build e empacotamento
+/_build/
+/_downloads/
+/_ccache/
+/AppDir/
+*.AppImage
+*.zsync
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Resultados de simulação
+*.h5
+*.bp/
+results/
+!docs/**/results/
+
+# Editores / SO
+.vscode/
+.idea/
+*.swp
+.DS_Store
