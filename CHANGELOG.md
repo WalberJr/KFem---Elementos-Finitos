@@ -3,6 +3,27 @@
 Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/). Versões
 seguem [SemVer](https://semver.org/lang/pt-BR/).
 
+## [Não lançado]
+
+### Adicionado
+- Geometria: **polígono**, **diferença** e **interseção** booleanas; a geometria é montada
+  na unidade do componente e escalada para metros no fim, o que preserva detalhes
+  submicrométricos (camadas de 0,4 µm) na tolerância do OCC.
+- Malha: **largura da faixa fina** no tamanho local (tamanho mínimo constante até essa
+  distância do contorno).
+- AppImage: `--python SCRIPT.py` roda scripts com o Python e o KFem do pacote (gerar
+  projetos por script e analisar resultados).
+- Exemplo da redução de CO₂ em meio ácido (Xie et al., *Nature Catalysis* 2022): modelo 1D
+  (36 casos) e extensão 2D com eletrodos plano, convexo e pontiagudo de mesma área, com
+  análise integrada 1D + 2D.
+- Manual do usuário completo (25 páginas): referência de todos os nós, gramática da equação
+  personalizada, programação em Python, cálculos em lote e exemplos.
+- Pacote de distribuição com `instalar.sh` (instalação por usuário, sem sudo).
+
+### Corrigido
+- O contorno do eletrólito no exemplo 1D de CO₂ passou a ser o marcador 7: com a interface
+  CL|DL agora preservada na geometria, a numeração dos contornos mudou.
+
 ## [0.1.0.dev0] — 2026-11-23 (pré-lançamento)
 
 Primeira versão funcional completa, ainda sem validação contra o COMSOL (Etapa 10 aguarda os
